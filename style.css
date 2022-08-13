@@ -1,0 +1,123 @@
+/*
+Syntax or CSS
+
+Selector {
+	property: value;
+}
+
+
+*/
+/* in CSS we have SPECIFICITY RULE
+Higher Priority (ID)
+( Class )
+( Element )
+
+
+
+Least Priority ( Universal )
+
+*/
+
+/* Asterisk is the Universal Selector*/
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+/*Element Selector*/
+h1,h2 {
+	font-family: "Montserrat", sans-serif
+}
+
+img { 
+	height: 250px;
+	width: 250px;
+	border: 5px solid forestgreen;
+	border-radius: 20%;
+ }
+
+/* ID selector use * ( hashtag)*/
+#landing {
+	/*vh - view port height - determined or measured percentage of the device you are viewing your webpage in*/
+	height: 90vh;
+	/*flexible responsive layouts from left to right*/
+	/*flexbox - it allows us to arrange or layout elements inside our landing section horizontally and vertically
+			by default, display: flex; arranges elements inside the parent element*/
+	display: flex;
+	/* flex-direction: column --> arranges flex items into a column*/
+	flex-direction: column;
+	/* justify-content: center --> arranges elements horizontally if the flex items are in a row, however, it arranges elements vertically if the flex items are in a column*/
+	justify-content: center;
+	/*align-items: center ---> arranges all flex items to be centered vertically*/
+	align-items: center;
+	/* all these will work when its flexed*/
+}
+
+#gallery {
+	height: 100vh;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+/*Class Selector use . (dot)*/
+.tools {
+	/*border---> lines around the element*/
+	border: 5px solid #f2f2f2;
+	height: 200px;
+	/*percentage as measurement for the width based on the total width of the parent element*/
+	width: 75%;
+	/* margin---> space outside the element (space between other elements)*/
+	margin: 20px;
+	/*padding ---> space inside the element*/
+	padding: 25px;
+}
+
+h2 {
+	color: #007bff; 
+}
+
+/*it make scrolling of the page smooth*/
+html { scroll-behavior: smooth;
+ }
+
+/*
+
+Bootstrap spaces
+
+m=> margin
+p=> padding
+
+t=> top
+s=> for start or left
+e=> for end or right
+b=> bottom
+
+x=> x-axis
+y=> y-axis
+
+1-5 or auto
+
+mx- auto (x & y)
+
+==================
+bg (background)
+
+primary - blue
+secondary - gray
+warning - yellow
+danger - red
+info - ligt blue
+success - gree
+when using the bootstrap it should be inside the attribute
+=======================
+
+text-align: justify;
+*/
+
